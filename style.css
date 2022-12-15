@@ -155,8 +155,8 @@ body::-webkit-scrollbar-track {}
 
 .dark_gradient {
     position: absolute;
-    height: 100vh;
-    width: 100vw;
+    height: 500vh;
+    width: 500vw;
     z-index: 2;
     background: linear-gradient(330.24deg, rgba(11, 29, 38, 0.253) 31.06%, #0B1D26 108.93%);
 }
@@ -164,9 +164,10 @@ body::-webkit-scrollbar-track {}
 #clouds {
     z-index: 1;
     top: 0%;
-    margin-top: -25%;
+    margin-top: -100%;
     left: 0%;
-    width: 150vw;
+    width: 200vw;
+    height: 400vh;
 }
 
 .content {
@@ -186,18 +187,29 @@ body::-webkit-scrollbar-track {}
 
 }
 
+@media screen and (max-width:770px) {
+
+    .navlinks,
+    .login {
+        display: none;
+    }
+}
+
 @media screen and (max-width:430px) {
     #mountains {
         margin-top: 65vh;
+        width: 134vw;
     }
 
     #clouds {
         margin-top: 0;
         width: 300vw;
+        height: 100vh;
     }
 
     .landing_content {
-        margin-top: 30vw;
+        margin-top: 55vw;
+        padding: 0 10px;
     }
 
     #sun {
@@ -209,29 +221,32 @@ body::-webkit-scrollbar-track {}
     }
 
     #landing_heading {
-        font-size: 1.7rem;
+        font-size: 1.5rem;
     }
 }
 
-@media screen and (max-width:390px) {
-    /* #mountains {
-        margin-top: 89%;
-        width: 137vw;
-    } */
-
-    /* #man {
-        margin-top: 75vh;
-    } */
+@media screen and (max-width:370px) {
 
     #landing_heading {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
+
+    }
+
+    #mountains {
+        width: 154vw;
+        margin-top: 75vh;
     }
 
     #clouds {
         width: 300vw;
+        height: 140vh;
     }
 
     .landing_content {
-        margin-top: 50vw;
+        margin-top: 60vw;
+    }
+
+    #man {
+        top: 82%;
     }
 }
