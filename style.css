@@ -28,10 +28,11 @@ body::-webkit-scrollbar-track {}
     position: fixed;
     top: 0;
     z-index: 10;
-    padding: 10px 26px;
+    padding: 20px 26px;
     display: flex;
     justify-content: space-between;
     width: 100vw;
+    transition: 0.5s all ease-in-out;
 }
 
 

@@ -7,11 +7,18 @@ const landing_para = document.getElementsByClassName("hiking_para")[0]
 const heading_margin = landing_heading.style.marginTop;
 const sun = document.getElementById("sun");
 const sun_margin = sun.style.marginTop;
+const navbar = document.getElementsByClassName('navbar')[0];
 
 window.addEventListener('scroll', () => {
-
     let value = window.scrollY;
-    // man.style.top = '-' + value * 0.1 + '%';
+    console.log(value);
+    if (value > 100) {
+        navbar.style.backgroundColor = '#0B1D26';
+
+    }
+    else {
+        navbar.style.backgroundColor = 'transparent'
+    }
     hills.style.top = value * 0.25 + 'vh';
     clouds.style.left = '-' + value * 0.05 + '%';
     clouds.style.top = value * 0.05 + '%';
