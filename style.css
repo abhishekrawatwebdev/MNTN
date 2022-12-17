@@ -136,18 +136,18 @@ body::-webkit-scrollbar-track {}
 }
 
 #man {
-    z-index: 4;
+    z-index: 5;
     /* margin-top: 60vh; */
     top: 60%;
 }
 
 #mountains {
-    z-index: 3;
+    z-index: 4;
     margin-top: 40vh;
 }
 
 #sun {
-    z-index: 2;
+    z-index: 3;
     width: 20vw;
     height: auto;
     top: 56%;
