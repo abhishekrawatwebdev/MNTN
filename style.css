@@ -42,6 +42,75 @@ body::-webkit-scrollbar-track {}
 
 }
 
+#menu_open {
+    display: none;
+}
+
+#menu_open svg,
+#menu_close img {
+    width: auto;
+    height: 24px;
+}
+
+.navbar_wrapper {
+    position: relative;
+}
+
+.nav_mobile {
+    display: none;
+    transition: all 0.4s ease-in-out;
+    transform: translateX(-104vw);
+    position: fixed;
+    z-index: 10;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    background: rgb(11, 29, 38);
+    color: white;
+}
+
+.navlinks_mobile {
+    height: fit-content;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.navlinks_mobile li {
+    list-style-type: none;
+    width: 100%;
+    text-align: center;
+}
+
+.navlinks_mobile li a {
+    padding: 20px;
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+#menu_close {
+    text-align: end;
+}
+
+#menu_close img {
+
+    width: auto;
+    height: 36px;
+    margin: 26px;
+}
+
+.navlinks_mobile li a:hover,
+:focus {
+    color: #0B1D26;
+    background-color: white;
+
+}
+
+
 .navlinks li {
     margin-right: 2vw;
     position: relative;
@@ -50,6 +119,8 @@ body::-webkit-scrollbar-track {}
     padding: 8px 16px;
 
 }
+
+
 
 .navlinks li:hover {
     color: var(--darkBack);
@@ -185,6 +256,13 @@ body::-webkit-scrollbar-track {}
 }
 
 @media screen and (max-width:770px) {
+    #menu_open {
+        display: block;
+    }
+
+    .nav_mobile {
+        display: flex;
+    }
 
     .navlinks,
     .login {

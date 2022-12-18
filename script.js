@@ -11,7 +11,6 @@ const navbar = document.getElementsByClassName('navbar')[0];
 
 window.addEventListener('scroll', () => {
     let value = window.scrollY;
-    console.log(value);
     if (value > 100) {
         navbar.style.backgroundColor = '#0B1D26';
 
@@ -51,4 +50,16 @@ $(document).ready(function () {
 
     });
 
+});
+
+const open_menu_btn = document.getElementById('menu_open');
+const navbar_mobile = document.getElementsByClassName('nav_mobile')[0]
+const close_menu_btn = document.getElementById('menu_close_btn');
+
+open_menu_btn.addEventListener('click', () => {
+    navbar_mobile.style.transform = "translateX(0)";
+});
+
+close_menu_btn.addEventListener('click', () => {
+    navbar_mobile.style.transform = "translateX(-104vw)";
 });

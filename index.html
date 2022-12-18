@@ -14,15 +14,35 @@
 
 <body>
     <section class="hero">
-        <nav class="navbar">
-            <img src="./images/Logo.svg" alt="" id="logo" height="20px">
-            <ul class="navlinks">
-                <li>Equipment</li>
-                <li>About us</li>
-                <li>Blog</li>
-            </ul>
-            <p class="login">Login</p>
-        </nav>
+        <div class="nav_wrapper">
+            <nav class="navbar">
+                <img src="./images/Logo.svg" alt="" id="logo">
+                <ul class="navlinks">
+                    <li>Equipment</li>
+                    <li>About us</li>
+                    <li>Blog</li>
+                </ul>
+                <p class="login">Login</p>
+                <p id="menu_open">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <path fill="#ffff"
+                            d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+                    </svg>
+                </p>
+            </nav>
+            <div class="nav_mobile">
+                <ul class="navlinks_mobile">
+                    <li id="menu_close">
+                        <img id="menu_close_btn" src="./images/xmark-solid.svg" alt="">
+                    </li>
+                    <li href="#"><a href="#">Equipment</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Login</a></li>
+                </ul>
+
+            </div>
+        </div>
         <div class="landing_section">
 
             <img src="./images/MG.png" id="mountains" alt="">
