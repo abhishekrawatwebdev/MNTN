@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="./images/Logo.svg" type="image/x-icon">
     <title>Explore the Mountains</title>
@@ -64,7 +65,7 @@
     </section>
     <section class="content">
         <div class="content-section1">
-            <div class="left fadein">
+            <div class="left " data-aos="fade-up-right">
                 <div class="section_number">01</div>
                 <p class="start-para">
                     _____Get started
@@ -89,7 +90,7 @@
                 </a>
             </div>
             <div class="gap"></div>
-            <div class="right fadein">
+            <div class="right" data-aos="fade-up-left">
                 <img src="./images/01.png" alt="">
             </div>
         </div>
@@ -98,11 +99,11 @@
         <div class="content-section1 content-section2">
 
 
-            <div class="right fadein">
+            <div class="right" data-aos="fade-down-right">
                 <img src="./images/02.png" alt="">
             </div>
             <div class="gap"></div>
-            <div class="left fadein">
+            <div class="left" data-aos="fade-down-left">
                 <div class="section_number">02</div>
                 <p class="start-para">
                     _____Hiking Essentials
@@ -133,7 +134,7 @@
 
 
 
-            <div class="left fadein">
+            <div class="left" data-aos="fade-up-right">
                 <div class="section_number">03</div>
                 <p class="start-para">
                     _____where you go is the key
@@ -155,7 +156,7 @@
                 </a>
             </div>
             <div class="gap"></div>
-            <div class="right fadein">
+            <div class="right" data-aos="fade-up-left">
                 <img src="./images/03.png" alt="">
             </div>
         </div>
@@ -163,9 +164,10 @@
     <footer>
         Made with &#128150; and &#127861;
     </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.2/jquery.min.js"
-        integrity="sha512-tWHlutFnuG0C6nQRlpvrEhE4QpkG1nn2MOUMWmUeRePl4e3Aki0VB6W1v3oLjFtd0hVOtRQ9PHpSfN6u6/QXkQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="script.js"></script>
 </body>
 
